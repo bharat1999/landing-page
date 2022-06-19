@@ -1,0 +1,53 @@
+@import './App.scss';
+
+.BrandBox
+{
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    height: 13vw;
+    width: 81%;
+    border: 2px $divider solid;
+    border-left: none;
+    border-right:none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgs
+{
+    // object-fit: scale-down;
+    margin:0 40px 0 0;
+    padding: 0;
+}
+
+
+
+// .apple
+// {
+//     width: 24.39px;
+//     height: 29.97px;
+// }
+
+// .nike
+// {
+//     width: 48.44px;
+//     height: 17.23px;
+// }
+
+.amazon
+{
+    margin-right: 0;
+}
+
+@media only screen and (max-width:677px)
+{
+    .BrandBox{
+        height: 148px;
+    }
+    .samsung {
+        margin-right: 0;
+    }
+}

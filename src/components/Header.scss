@@ -1,0 +1,55 @@
+@import './App.scss';
+
+.header
+{
+    margin: 70px 80px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 20px;
+}
+
+.header-content
+{
+    height: 263px;
+    width: 315px;
+}
+
+.header-title
+{
+    font-family: $font-1;
+    font-size: 65px;
+    font-weight: 400;
+    color: $heading-text-color;
+    line-height: 65px;
+    margin: 0;
+    padding: 0;
+}
+
+.header-text
+{
+    padding-right: 30px;
+    font-family: $font-2;
+    font-size: 14px;
+    margin-bottom: 30px;
+    line-height: 24px;
+    font-weight: 400;
+    color:$subheading-text-color;
+}
+
+.header-image
+{
+    height: 263px;
+    width: 273px;
+}
+
+
+
+@media  only screen and (max-width:767px) {
+    .header{
+        margin: 95px 30px;
+        text-align: center;
+        row-gap: 40px;
+    }
+    
+}

@@ -1,0 +1,22 @@
+@import './App.scss';
+
+.CtaBody
+{
+    background-color: #0B3835;
+    height: 40px;
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10.5px;
+}
+
+
+
+.CtaText
+{
+    font-family: $font-2;
+    font-size: 14px;
+    line-height: 24px;
+    color: white;
+}

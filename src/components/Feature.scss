@@ -1,0 +1,30 @@
+@import './App.scss';
+
+.feature {
+    width: 225px;
+    height: 298px;
+    text-align: center;
+}
+
+.featureHeading
+{
+    font-family: $font-1;
+    font-weight:400;
+    font-size: 26px;
+    line-height: 36px;
+    color:$black;
+}
+
+.featureText {
+    font-family:$font-2;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.featureLink {
+    font-family:$font-2;
+    font-weight: 500;
+    color:$link;
+    font-size: 14px;
+}

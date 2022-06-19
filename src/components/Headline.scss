@@ -1,0 +1,38 @@
+@import './App.scss';
+
+.headlineBody 
+{
+    display: flex;
+    margin: 20px 90px;
+    column-gap: 50px;
+}
+
+.headlineContent{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: flex-start;
+    width: 210px;
+    height: 202px;
+}
+
+.headlineHeading
+{
+    margin-bottom: 20px;
+    font-family: $font-1;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.headlineText {
+    margin-bottom: 30px;
+    font-family: $font-2;
+    font-weight: 400;
+    font-size: 14px;
+    color:$subheading-text-color;
+}
+
+.CtaBody {
+    margin: 0;
+    border-radius: 8.75px;
+}

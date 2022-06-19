@@ -1,0 +1,49 @@
+@import './App.scss';
+
+.top
+{
+    margin: 0;
+    height: 58px;
+}
+
+.logo
+{
+    width: 90.99px;
+    height: 18px;
+    padding:20px 30px;   
+}
+
+.download
+{
+    float: right;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    row-gap: 7px;
+}
+
+.googleLogo
+{
+    height: 34px;
+    width: 102px;
+    padding: 12px 0px;
+}
+
+.appleLogo
+{
+    height: 34px;
+    width: 102px;
+    padding: 12px 30px 12px 7px;
+}
+
+@media only screen and (max-width:400px) {
+    .logo
+    {
+        padding-left: 20px;
+    }
+    .appleLogo
+    {
+        padding-right: 20px;
+    }
+}
