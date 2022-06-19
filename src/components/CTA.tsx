@@ -1,10 +1,10 @@
 import './CTA.scss'
 
-interface CTA{
+interface cta{
     text:string,
 }
 
-function CTA({text}:CTA)
+function CTA({text}:cta)
 {
     return (
         <div className='CtaBody'>
