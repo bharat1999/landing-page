@@ -1,6 +1,6 @@
 import './Headline.scss'
 import HImage from '../assets/img/headline.png'
-import CTA from './CTA'
+import Button from './Button'
 
 function Headline() {
     return (
@@ -9,7 +9,7 @@ function Headline() {
             <div className='headlineContent'>
                 <p className='headlineHeading'>Headline</p>
                 <p className='headlineText'>This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com</p>
-                <CTA text='Try free'/>
+                <Button text='Try free'/>
             </div>
         </div>
     )

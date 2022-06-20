@@ -3,8 +3,11 @@
 .headlineBody 
 {
     display: flex;
+    flex-wrap: wrap;
     margin: 20px 90px;
-    column-gap: 50px;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
 }
 
 .headlineContent{
@@ -32,7 +35,23 @@
     color:$subheading-text-color;
 }
 
-.CtaBody {
-    margin: 0;
-    border-radius: 8.75px;
+@media only screen and (max-width:767px) {
+    .headlineBody {
+        margin:20px 30px;
+    }
+    .headlineContent{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+
+@media only screen and (max-width:648px) {
+    .headlineBody {
+        flex-direction: column-reverse;
+    }
+    
 }

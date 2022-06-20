@@ -1,0 +1,83 @@
+@import './App.scss';
+
+.cardBody {
+    background: $client-background;
+    width: 183px;
+    height: 216px;
+}
+
+.cardText {
+    font-family: $font-2;
+    color:$black;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 11.7141px;
+    line-height: 150%;
+    margin: 20px 20px 60px;
+}
+
+.clientComments
+{
+    margin: 0px 37.43px 20px 20px ;
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+}
+
+.clientImg {
+    height: 45px;
+    width: 45px;
+    border: 1.73px solid #BCBCBC;
+    border-radius: 50%;
+}
+
+.clientCommentsContent {
+    font-family: $font-3;
+    font-size: 10px;
+    color: $black;
+    
+}
+
+.clientName {
+    margin:0;
+}
+
+.clientRating {
+    margin: 0;
+}
+
+@media only screen and (max-width:565px) {
+    .cardBody {
+        width: 315px;
+        height: 372px;
+
+    }
+
+    .cardText {
+        font-size: 20.15px;
+        margin: 40px 40px 90px;
+    }
+
+    .clientComments
+    {
+        margin: 0px 50.25px 40px 40px ;
+        display: flex;
+        column-gap: 20px;
+        align-items: center;
+    }
+
+    .clientImg {
+        height: 80px;
+        width: 80px;
+    }
+
+    .clientCommentsContent {
+        font-size: 18px;
+    }
+
+    .star {
+        height: 20.15px;
+        width: 20.15px;
+    }
+}
+

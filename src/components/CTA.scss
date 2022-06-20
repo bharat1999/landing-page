@@ -1,22 +1,67 @@
 @import './App.scss';
 
-.CtaBody
+.ctaBody
 {
-    background-color: #0B3835;
-    height: 40px;
-    width: 120px;
+    margin: 40px 90px;
+    background: #F9FAFB;
+    border-radius: 12px;
     display: flex;
-    align-items: center;
     justify-content: center;
-    border-radius: 10.5px;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 34px 95px;
+    gap: 50px;
 }
 
+.ctaContent {
+    width: 50%;
+}
 
+.ctaInfoTitle {
+    font-family: $font-1;
+    font-weight: 400;
+    font-size: 25.74px;
+    color:$black;
+    padding: 0;
+    margin: 0;
+}
 
-.CtaText
-{
+.ctaInfoSubtitle {
     font-family: $font-2;
+    font-weight: 400;
     font-size: 14px;
-    line-height: 24px;
-    color: white;
+    padding: 0;
+    margin: 20px 0 30px;
+}
+
+.CTA {
+    p {
+        font-family: $font-2;
+        margin: 0 0 10px;
+        padding: 0;
+        font-weight: 500;
+        color:$black;
+        font-size: 15.67px;
+    }
+    .ctaBtn {
+        display: flex;
+        column-gap: 7px;
+    }
+    
+}
+
+.ctaIphone {
+    filter: drop-shadow(-10px 10px 20px grey);
+}
+
+@media  only screen and (max-width:767px) {
+    .ctaBody {
+        margin: 40px 30px;
+        padding: 35px 52px;
+    }
+
+    .ctaContent {
+        width: 100%;
+    }
+    
 }

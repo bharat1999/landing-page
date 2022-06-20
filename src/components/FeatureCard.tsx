@@ -1,11 +1,11 @@
-import './Feature.scss'
+import './FeatureCard.scss'
 
-interface feature {
+interface featureCard {
     url:string,
     altName:string,
 }
 
-function Feature({url,altName}:feature) {
+function FeatureCard({url,altName}:featureCard) {
     return (
         <div className='feature'>
             <img className='featureImage' src={url} alt={altName} />
@@ -16,4 +16,4 @@ function Feature({url,altName}:feature) {
     )
 }
 
-export default Feature
+export default FeatureCard

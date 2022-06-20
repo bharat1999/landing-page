@@ -1,0 +1,77 @@
+@import './App.scss';
+
+.footer
+{
+    font-family: $font-2;
+    color: $black;
+    font-size: 14px;
+    margin: 0 auto;
+    padding:30px 0;
+    width: 81%;
+    border: 2px $divider solid;
+    border-left: none;
+    border-right:none;
+    border-bottom: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 30px;
+}
+
+.content-1 {
+    margin: 0;
+    padding: 0;
+    .logo {
+        margin-bottom: 35px;
+    }
+    input {
+        display: inline;
+        background: #F3F3F3;
+        border-radius: 12px;
+        border:none;
+        height: 40px;
+        padding: 8px 16px;
+    }
+
+    .send {
+        display: inline;
+        position: relative;
+        left: -40px;
+        color: #FF6250;
+    }
+}
+
+.content-2 {
+    width: 315px;   
+    img {
+        height: 38px;
+    }
+    .social {
+        text-align: end;
+    }
+
+    .titleLinks {
+        margin-top: 61px;
+        display: flex;
+        column-gap: 15.5px;
+    }
+    .titleLinkText {
+        font-weight: 600;
+        display: inline;
+    }
+
+    
+}
+
+@media only screen and (max-width:665px) {
+    
+    .content-2 {
+        .social {
+            text-align: start;
+        }
+        .titleLinks {
+            margin-top: 32px;
+        }
+    }
+    
+}
