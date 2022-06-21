@@ -2,20 +2,20 @@
 
 .header
 {
-    margin: 70px 80px;
+    margin:70px auto;
+    width: 608px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     column-gap: 20px;
 }
 
-.header-content
+.headerContent
 {
-    height: 263px;
     width: 315px;
 }
 
-.header-title
+.headerTitle
 {
     font-family: $font-1;
     font-size: 65px;
@@ -26,12 +26,12 @@
     padding: 0;
 }
 
-.header-text
+.headerSubtitle
 {
     padding-right: 30px;
     font-family: $font-2;
     font-size: 14px;
-    margin-bottom: 30px;
+    margin:15px 0 30px;
     line-height: 24px;
     font-weight: 400;
     color:$subheading-text-color;
@@ -47,9 +47,21 @@
 
 @media  only screen and (max-width:767px) {
     .header{
-        margin: 95px 30px;
-        text-align: center;
+        width: 315px;
+        margin: 95px auto 96px;
         row-gap: 40px;
+    }
+
+    .headerContent {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .headerSubtitle {
+        padding: 0 15px;
     }
     
 }

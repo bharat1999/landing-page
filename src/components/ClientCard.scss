@@ -1,9 +1,11 @@
 @import './App.scss';
 
 .cardBody {
+    box-sizing: border-box;
     background: $client-background;
     width: 183px;
     height: 216px;
+    padding: 20px;
 }
 
 .cardText {
@@ -13,12 +15,12 @@
     font-weight: 700;
     font-size: 11.7141px;
     line-height: 150%;
-    margin: 20px 20px 60px;
+    margin: 0 0  60px;
 }
 
 .clientComments
 {
-    margin: 0px 37.43px 20px 20px ;
+    margin: 0px;
     display: flex;
     column-gap: 10px;
     align-items: center;
@@ -31,39 +33,33 @@
     border-radius: 50%;
 }
 
-.clientCommentsContent {
+.clientName {
     font-family: $font-3;
     font-size: 10px;
     color: $black;
-    
-}
-
-.clientName {
     margin:0;
+    opacity: .5;
 }
 
 .clientRating {
     margin: 0;
 }
 
-@media only screen and (max-width:565px) {
+@media only screen and (max-width:767px) {
     .cardBody {
         width: 315px;
         height: 372px;
-
+        padding: 40px;
     }
 
     .cardText {
         font-size: 20.15px;
-        margin: 40px 40px 90px;
+        margin-bottom: 91px;
     }
 
     .clientComments
     {
-        margin: 0px 50.25px 40px 40px ;
-        display: flex;
         column-gap: 20px;
-        align-items: center;
     }
 
     .clientImg {
@@ -72,6 +68,10 @@
     }
 
     .clientCommentsContent {
+        font-size: 18px;
+    }
+
+    .clientName {
         font-size: 18px;
     }
 

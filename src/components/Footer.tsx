@@ -1,5 +1,6 @@
 import './Footer.scss';
 import Social from '../assets/img/Socials.png'
+import Divider from './Divider';
 
 const logo = <svg className='logo' width="91" height="18" viewBox="0 0 93 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M5.11497 18.7353C5.08289 18.4947 5.08289 18.238 5.11497 17.9652C5.91711 17.885 6.48663 17.8128 6.82353 17.7487C7.16043 17.6684 7.36898 17.508 7.4492 17.2674C7.52941 17.0267 7.56952 16.6176 7.56952 16.0401V2.90107H5.8369C4.98663 2.90107 4.31283 3.02139 3.81551 3.26203C3.33422 3.48663 2.94118 3.83155 2.63636 4.29679C2.34759 4.76203 2.05882 5.35561 1.77005 6.07754C1.51337 6.10963 1.25668 6.10963 1 6.07754C1.09626 5.30749 1.18449 4.56952 1.26471 3.86364C1.36096 3.15775 1.44118 2.47594 1.50535 1.81818C2.54813 1.88235 3.70321 1.92246 4.97059 1.9385C6.23797 1.9385 7.55348 1.9385 8.91711 1.9385C10.2968 1.9385 11.6203 1.9385 12.8877 1.9385C14.1711 1.92246 15.3262 1.88235 16.3529 1.81818C16.4171 2.45989 16.4813 3.14171 16.5455 3.86364C16.6096 4.56952 16.6898 5.30749 16.7861 6.07754C16.5134 6.10963 16.2487 6.10963 15.992 6.07754C15.6872 5.33957 15.3824 4.73797 15.0775 4.27273C14.7727 3.80749 14.3797 3.46257 13.8984 3.23797C13.4332 3.01337 12.7754 2.90107 11.9251 2.90107H10.2166V15.7273C10.2166 16.2246 10.2326 16.6176 10.2647 16.9064C10.2968 17.1952 10.385 17.4037 10.5294 17.5321C10.6898 17.6604 10.9385 17.7567 11.2754 17.8209C11.6123 17.869 12.0775 17.9171 12.6711 17.9652C12.7193 18.2219 12.7193 18.4786 12.6711 18.7353C12.3342 18.7353 11.9251 18.7273 11.4438 18.7112C10.9786 18.7112 10.5134 18.7112 10.0481 18.7112C9.58289 18.6952 9.18984 18.6872 8.86898 18.6872C8.56417 18.6872 8.17914 18.6952 7.7139 18.7112C7.26471 18.7112 6.79947 18.7112 6.31818 18.7112C5.85294 18.7273 5.45187 18.7353 5.11497 18.7353Z" fill="#134E4A"/>
@@ -23,20 +24,23 @@ const logo = <svg className='logo' width="91" height="18" viewBox="0 0 93 20" fi
 function Footer() {
     return (
         <div className='footer'>
-            <div className='content-1'>
-                {logo}
-                <p style={{'color':'#A4A4A4'}}>Susbcribe to our newsletter</p>
-                <input type="text" placeholder='Enter your email' />
-                <p className='send'>Send</p>
-            </div>
-            <div className='content-2'>
-                <div className='social'>
-                    <img src={Social} alt="Social links" />
+            <Divider/>
+            <div className='footerContent'>
+                <div className='content-1'>
+                    {logo}
+                    <p className='subscribe'>Susbcribe to our newsletter</p>
+                    <input type="text" placeholder='Enter your email' />
+                    <p className='send'>Send</p>
                 </div>
-                <div className='titleLinks'>
-                    <p className='titleLinkText'>Privacy policy</p>
-                    <p className='titleLinkText'>Cookies policy</p>
-                    <p className='titleLinkText'>© Trainers 2022</p>
+                <div className='content-2'>
+                    <div className='social'>
+                        <img src={Social} alt="Social links" />
+                    </div>
+                    <div className='titleLinks'>
+                        <p className='titleLinkText'>Privacy policy</p>
+                        <p className='titleLinkText'>Cookies policy</p>
+                        <p className='titleLinkText'>© Trainers 2022</p>
+                    </div>
                 </div>
             </div>
         </div>

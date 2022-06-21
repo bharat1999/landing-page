@@ -1,11 +1,12 @@
 @import './App.scss';
 
 .clients {
-    margin:60px 90px 61px;
-    
+    width: 589px;
+    margin:60px auto 61px;
 }
 
 .clientsTitle {
+    margin: 0 auto 35px;
     font-family: $font-1;
     font-weight: 400;
     font-size: 30px;
@@ -20,9 +21,12 @@
     gap: 20px;
 }
 
-@media only screen and (max-width:565px) {
+@media only screen and (max-width:767px) {
     .clients {
-        margin: 60px 30px 61px;
+        width: 315px;
+    }
+    .clientsTitle {
+        margin-bottom: 36px;
     }
     
 }

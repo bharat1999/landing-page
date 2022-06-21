@@ -1,0 +1,15 @@
+@import './App.scss';
+
+.divider {
+    height: 0;
+    border: 2px solid $divider;
+    border-bottom: none;
+    width: calc((100% - 140px));
+    margin: 0 auto;
+}
+
+@media only screen and (max-width:767px) {
+    .divider {
+        width: calc((100% - 60px));
+    }
+}

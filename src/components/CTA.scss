@@ -2,36 +2,46 @@
 
 .ctaBody
 {
-    margin: 40px 90px;
+    box-sizing: border-box;
+    width: 588px;
+    margin: 40px auto;
     background: #F9FAFB;
     border-radius: 12px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items:flex-start;
     flex-wrap: wrap;
-    padding: 34px 95px;
+    padding: 34px 94.15px 34px 95px;
     gap: 50px;
 }
 
 .ctaContent {
-    width: 50%;
+    width: 211px;
 }
 
 .ctaInfoTitle {
     font-family: $font-1;
     font-weight: 400;
     font-size: 25.74px;
+    line-height: 32px;
     color:$black;
     padding: 0;
     margin: 0;
 }
 
 .ctaInfoSubtitle {
+    color:$grey;
     font-family: $font-2;
     font-weight: 400;
     font-size: 14px;
     padding: 0;
     margin: 20px 0 30px;
+    line-height: 24px;
+}
+
+.ctaIphone {
+    filter: drop-shadow(-10px 10px 20px grey);
+    width: 137.85px;
 }
 
 .CTA {
@@ -42,6 +52,7 @@
         font-weight: 500;
         color:$black;
         font-size: 15.67px;
+        line-height: 147.5%;
     }
     .ctaBtn {
         display: flex;
@@ -50,13 +61,10 @@
     
 }
 
-.ctaIphone {
-    filter: drop-shadow(-10px 10px 20px grey);
-}
 
 @media  only screen and (max-width:767px) {
     .ctaBody {
-        margin: 40px 30px;
+        width: 315px;
         padding: 35px 52px;
     }
 
